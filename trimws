@@ -10,4 +10,5 @@ find . \
      -not -name \*.gif \
      -not -name \*.mo \
      -not -name \*.png \
-     -type f -exec emacs -Q -batch {} -eval "(require 'whitespace)" -eval "(let ((whitespace-style '(empty trailing))) (whitespace-cleanup))" -f save-buffer \;
+     -type f \
+     -exec emacs -Q -batch {} -eval "(require 'whitespace)" -eval "(let ((whitespace-style '(empty trailing))) (whitespace-cleanup))" -f save-buffer \;
