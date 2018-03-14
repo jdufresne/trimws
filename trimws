@@ -8,7 +8,9 @@ find . \
      -name .git -prune -o \
      -name .hg -prune -o \
      -not -name \*.gif \
+     -not -name \*.ldif \
      -not -name \*.mo \
+     -not -name \*.pem \
      -not -name \*.png \
      -not -name \*.xls \
      -not -name \*.xlsx \
