@@ -5,13 +5,18 @@ set -u
 set -x
 
 find . \
+     -name .coverage -prune -o \
      -name .git -prune -o \
      -name .hg -prune -o \
+     -name .tox -prune -o \
+     -name \*.egg-info -prune -o \
+     -name __pycache__ -prune -o \
      -not -name \*.gif \
      -not -name \*.ldif \
      -not -name \*.mo \
      -not -name \*.pem \
      -not -name \*.png \
+     -not -name \*.pyc \
      -not -name \*.xls \
      -not -name \*.xlsx \
      -type f \
