@@ -18,6 +18,7 @@ find . \
      -not -name \*.pem \
      -not -name \*.png \
      -not -name \*.pyc \
+     -not -name \*.woff2 \
      -not -name \*.xls \
      -not -name \*.xlsx \
      -type f \
