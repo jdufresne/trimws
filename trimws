@@ -14,6 +14,7 @@ find . \
      -name __snapshots__ -prune -o \
      -not -name \*.gif \
      -not -name \*.jpg \
+     -not -name \*.jpeg \
      -not -name \*.ldif \
      -not -name \*.mo \
      -not -name \*.pem \
