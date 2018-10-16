@@ -9,9 +9,12 @@ find . \
      -name .git -prune -o \
      -name .hg -prune -o \
      -name .tox -prune -o \
+     -name .venv -prune -o \
      -name \*.egg-info -prune -o \
      -name __pycache__ -prune -o \
      -name __snapshots__ -prune -o \
+     -name vendor -prune -o \
+     -name venv -prune -o \
      -not -name \*.gif \
      -not -name \*.jpeg \
      -not -name \*.jpg \
