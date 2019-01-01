@@ -19,6 +19,7 @@ find . \
      -name vendor -prune -o \
      -name venv -prune -o \
      -not -name \*.gif \
+     -not -name \*.whl \
      -not -name \*.jpeg \
      -not -name \*.jpg \
      -not -name \*.ldif \
