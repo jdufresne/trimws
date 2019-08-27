@@ -27,6 +27,7 @@ find . \
      -not -name \*.pem \
      -not -name \*.png \
      -not -name \*.pyc \
+     -not -name \*.svg \
      -not -name \*.whl \
      -not -name \*.woff2 \
      -not -name \*.xls \
