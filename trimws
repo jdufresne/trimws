@@ -18,10 +18,13 @@ find . \
      -name _vendor -prune -o \
      -name vendor -prune -o \
      -name venv -prune -o \
+     -not -name \*.bz2 \
      -not -name \*.gif \
+     -not -name \*.gz \
      -not -name \*.jpeg \
      -not -name \*.jpg \
      -not -name \*.ldif \
+     -not -name \*.lzma \
      -not -name \*.mo \
      -not -name \*.pdf \
      -not -name \*.pem \
@@ -29,8 +32,10 @@ find . \
      -not -name \*.pyc \
      -not -name \*.svg \
      -not -name \*.whl \
+     -not -name \*.woff \
      -not -name \*.woff2 \
      -not -name \*.xls \
      -not -name \*.xlsx \
+     -not -name \*.xz \
      -type f \
      -exec emacs -Q -batch {} -eval "(require 'whitespace)" -eval "(let ((whitespace-style '(empty trailing))) (whitespace-cleanup))" -f save-buffer \;
