@@ -26,6 +26,7 @@ find . \
      -not -name \*.ldif \
      -not -name \*.lzma \
      -not -name \*.mo \
+     -not -name \*.mov \
      -not -name \*.pdf \
      -not -name \*.pem \
      -not -name \*.png \
