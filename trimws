@@ -39,4 +39,9 @@ find . \
      -not -name \*.xlsx \
      -not -name \*.xz \
      -type f \
-     -exec emacs -Q -batch {} -eval "(require 'whitespace)" -eval "(let ((whitespace-style '(empty trailing))) (whitespace-cleanup))" -f save-buffer \;
+     -exec emacs -Q -batch {} \
+     -eval "(setq require-final-newline t)" \
+     -eval "(set-buffer-modified-p t)" \
+     -eval "(require 'whitespace)" \
+     -eval "(let ((whitespace-style '(empty trailing))) (whitespace-cleanup))" \
+     -f save-buffer \;
