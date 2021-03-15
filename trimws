@@ -4,6 +4,8 @@ set -e
 set -u
 set -x
 
+dir="$(dirname "${0}")"
+
 find . \
      -name .coverage -prune -o \
      -name .eggs -prune -o \
@@ -39,9 +41,4 @@ find . \
      -not -name \*.xlsx \
      -not -name \*.xz \
      -type f \
-     -exec emacs -Q -batch {} \
-     -eval "(setq require-final-newline t)" \
-     -eval "(set-buffer-modified-p t)" \
-     -eval "(require 'whitespace)" \
-     -eval "(let ((whitespace-style '(empty trailing))) (whitespace-cleanup))" \
-     -f save-buffer \;
+     -exec emacs -Q -batch {} -l "${dir}/trimws.el" \;
