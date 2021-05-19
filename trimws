@@ -4,7 +4,7 @@ set -e
 set -u
 set -x
 
-dir="$(dirname "${0}")"
+dir="$(dirname "$(realpath "${0}")")"
 
 find . \
      -name .coverage -prune -o \
