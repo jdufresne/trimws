@@ -1,3 +1,5 @@
+(fundamental-mode)
+
 (require 'whitespace)
 
 (setq require-final-newline t
