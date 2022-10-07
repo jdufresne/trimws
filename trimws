@@ -29,6 +29,7 @@ find . \
      -not -name \*.lzma \
      -not -name \*.mo \
      -not -name \*.mov \
+     -not -name \*.mp3 \
      -not -name \*.pdf \
      -not -name \*.pem \
      -not -name \*.png \
