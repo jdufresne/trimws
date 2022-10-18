@@ -41,5 +41,9 @@ find . \
      -not -name \*.xls \
      -not -name \*.xlsx \
      -not -name \*.xz \
+     -not -name Gemfile.lock \
+     -not -name npm-shrinkwrap.json \
+     -not -name package-lock.json \
+     -not -name yarn.lock \
      -type f \
      -exec emacs -Q -batch {} -l "${dir}/trimws.el" \;
