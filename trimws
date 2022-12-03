@@ -35,6 +35,7 @@ find . \
      -not -name \*.png \
      -not -name \*.pyc \
      -not -name \*.svg \
+     -not -name \*.webp \
      -not -name \*.whl \
      -not -name \*.woff \
      -not -name \*.woff2 \
